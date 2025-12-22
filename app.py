@@ -342,3 +342,6 @@ with tab_advanced:
 
     with st.expander("Full raw AFD text", expanded=False):
         st.text(st.session_state.afd_text)
+    with st.sidebar:
+        st.write("OPENAI key detected:", bool(st.secrets.get("OPENAI_API_KEY")))
+
